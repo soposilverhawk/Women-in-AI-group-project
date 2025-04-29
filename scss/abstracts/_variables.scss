@@ -1,0 +1,66 @@
+// 1. Design color scheme:
+
+$primary-color: #ff3B30;
+
+// interface color schemes:
+
+$interface-black: #000;
+$interface-gray: #4A5468;
+$interface-lightgray-1: #E2E7F0;
+$interface-lightgray-2: #EDF0F7;
+$interface-lightgray-3: #F9FAFC;
+$interface-white: #fff;
+
+
+// 2. transparency
+
+$transparency-100: 100%;
+$transparency-80: 80%;
+$transparency-60: 60%;
+$transparency-40: 40%;
+$transparency-24: 24%;
+$transparency: 16%;
+$transparency: 8%;
+$transparency: 4%;
+
+
+// 3. box-shadows:
+
+$shadow-40: 0 0 40px $interface-black;
+$shadow-20: 0 0 20px rgba(0, 0, 0, 0.7);
+
+// 4. Typography:
+
+// headline common typography:
+
+$headline-fws: "SemiBold";
+$headline-ls: 0.35px;
+
+// headline individual typography:
+
+$headline-1-fs: 24px;
+$headline-1-lh: 40px;
+
+$headline-2-fs: 16px;
+$headline-2-lh: 24px;
+
+// body text typography:
+
+$body-txt-fs: 16px;
+$body-txt-lh: 24px;
+$body-txt-fw: "Regular";
+$body-txt-ls: 0.5px;
+
+// headline-3 typography:
+
+$headline-3-fs: 13px;
+$headline-3-lh: 18px;
+$headline-3-fw: "Medium";
+$headline-3-ls: 0.20px;
+
+// small text:
+
+$txt-sm-fs: 12px;
+$txt-sm-lh: 16px;
+$txt-sm-fw: "Regular";
+$txt-sm-ls: 0.20px;
