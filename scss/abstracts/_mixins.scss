@@ -1,0 +1,45 @@
+// კონტეინერის მიქსინი სხვადასხვა რეზოლუციისთვის. @include-ისას არგუმენტად გადაეცით ის რეზოლუცია რომელზეც აწყობთ გარკვეულ სექციას. მაგ: ვაწყობ ჰედერს 1240px-ზე, ვუთითებ:
+
+// header {
+//     @include container(1240px)
+// }
+
+// გთხოვთ არ წაშალოთ კომენტარი. დატესტვისთვის გამოიყენეთ main.scss-ის ფაილი
+
+@mixin container($screenResolution: 1920px) {
+  @if ($screenResolution == 1920px) {
+    max-width: 1312px;
+  } @else if ($screenResolution == 1240px) {
+    max-width: 1128px;
+  } @else if ($screenResolution == 1024px) {
+    max-width: 928px;
+  } @else if($screenResolution == 360px) {
+    max-width: $screenResolution;
+  }
+
+  width: 100%;
+  margin: 0 auto;
+}
+
+// მიქსინი სათაურებისთვის და ტექსტებისთვის. შექმნით სათაურებისთვის კლასებს დიზაინიდან გამომდინარე და კლასს მიანიჭებთ headline მიქსინს
+
+@mixin headline($fs, $lh, $fw, $ls) {
+  font-size: $fs;
+  line-height: $lh;
+  font-weight: $fw;
+  letter-spacing: $ls;
+}
+
+// ზოგადი ფლექსის მიქსინი, defaultad ცენტრავს ყველაფერს, თუმცა საჭიროებისამებრ შეგიძლიათ შეცვლათ
+
+@mixin flex($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+
+// IMPORTANT!
+
+// თუკი რაიმე კონკრეტული ელემენტის მიქსინის გაწერა დაგჭირდებათ, შექმენით ახალი ფარშიალ ფაილი კომპონენტების ფოლდერში და main.scss-ში შემოაიმპორტეთ _reset.scss-ის იმპორტის შემდეგ.
