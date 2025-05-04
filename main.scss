@@ -26,3 +26,83 @@
 body {
   font-family: "Fira Sans", sans-serif;
 }
+.container {
+  @include container();
+}
+.flex {
+  @include flex();
+}
+.main {
+  margin-top: 48px;
+
+  section {
+    background: url("./imgs/slider-imgs/slider-1-mountains.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 712px;
+    position: relative;
+    border-radius: 12px;
+    padding: 24px;
+
+    .img-description-container {
+      width: 600px;
+      height: 280px;
+      background-color: $interface-white;
+      position: absolute;
+      bottom: 24px;
+      left: 24px;
+      padding: 32px 24px;
+      border-radius: 10px;
+      @include flex(
+        $direction: column,
+        $justify: space-between,
+        $align: flex-start
+      );
+
+      .description-category-date-container p {
+        @include headline(
+          $fs: $headline-3-fs,
+          $lh: $headline-3-lh,
+          $fw: $headline-fws,
+          $ls: -0.08px
+        );
+        @include flex();
+        gap: 10px;
+
+        .category {
+          color: $primary-color;
+        }
+        .date {
+          color: $interface-gray;
+        }
+      }
+
+      h2 {
+        @include headline(
+          $fs: $headline-1-fs,
+          $lh: $headline-2-lh,
+          $fw: $headline-fws,
+          $ls: $headline-ls
+        );
+      }
+
+      .slider-controls-container {
+        gap: 12px;
+        background-color: $interface-lightgray-2;
+        border-radius: 8px;
+        padding: 8px;
+
+        .slider-numeration {
+          font-weight: bold;
+        }
+        .slider-controls {
+          cursor: pointer;
+
+          &:hover {
+            background-color: $interface-lightgray-1;
+          }
+        }
+      }
+    }
+  }
+}
