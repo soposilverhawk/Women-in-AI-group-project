@@ -3,6 +3,7 @@
 @import "./scss/abstracts/mixins";
 @import "./scss/base/reset";
 
+
 // ფონტების მაგალითები, იმის მიხედვით რომელიც დაგჭირდებათ - დატოვეთ როგორც კომენტარი
 
 // .fira-sans-regular {
@@ -35,7 +36,7 @@ body {
 .main {
   margin-top: 48px;
 
-  section {
+  #slider-section {
     background: url("./imgs/slider-imgs/slider-1-mountains.png");
     background-repeat: no-repeat;
     width: 100%;

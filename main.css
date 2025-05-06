@@ -159,7 +159,7 @@ body {
 .main {
   margin-top: 48px;
 }
-.main section {
+.main #slider-section {
   background: url("./imgs/slider-imgs/slider-1-mountains.png");
   background-repeat: no-repeat;
   width: 100%;
@@ -168,7 +168,7 @@ body {
   border-radius: 12px;
   padding: 24px;
 }
-.main section .img-description-container {
+.main #slider-section .img-description-container {
   width: 600px;
   height: 280px;
   background-color: #fff;
@@ -182,7 +182,7 @@ body {
   justify-content: space-between;
   align-items: flex-start;
 }
-.main section .img-description-container .description-category-date-container p {
+.main #slider-section .img-description-container .description-category-date-container p {
   font-size: 13px;
   line-height: 18px;
   font-weight: 600;
@@ -193,31 +193,31 @@ body {
   align-items: center;
   gap: 10px;
 }
-.main section .img-description-container .description-category-date-container p .category {
+.main #slider-section .img-description-container .description-category-date-container p .category {
   color: #ff3B30;
 }
-.main section .img-description-container .description-category-date-container p .date {
+.main #slider-section .img-description-container .description-category-date-container p .date {
   color: #4A5468;
 }
-.main section .img-description-container h2 {
+.main #slider-section .img-description-container h2 {
   font-size: 24px;
   line-height: 24px;
   font-weight: 600;
   letter-spacing: 0.35px;
 }
-.main section .img-description-container .slider-controls-container {
+.main #slider-section .img-description-container .slider-controls-container {
   gap: 12px;
   background-color: #EDF0F7;
   border-radius: 8px;
   padding: 8px;
 }
-.main section .img-description-container .slider-controls-container .slider-numeration {
+.main #slider-section .img-description-container .slider-controls-container .slider-numeration {
   font-weight: bold;
 }
-.main section .img-description-container .slider-controls-container .slider-controls {
+.main #slider-section .img-description-container .slider-controls-container .slider-controls {
   cursor: pointer;
   border: none;
 }
-.main section .img-description-container .slider-controls-container .slider-controls:hover {
+.main #slider-section .img-description-container .slider-controls-container .slider-controls:hover {
   background-color: #E2E7F0;
 }/*# sourceMappingURL=main.css.map */
