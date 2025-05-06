@@ -3,7 +3,6 @@
 @import "./scss/abstracts/mixins";
 @import "./scss/base/reset";
 
-
 // ფონტების მაგალითები, იმის მიხედვით რომელიც დაგჭირდებათ - დატოვეთ როგორც კომენტარი
 
 // .fira-sans-regular {
@@ -113,7 +112,7 @@ body {
   }
 }
 
+// მედია-ქუერიები მოათავსეთ /scss/media-queries-ის შესაბამის ფოლდერში და დააიმპორტეთ ქვემოთ:
 
-// მედია-ქუერიები მოათავსეთ /scss/media-queries ფოლდერში და დააიმპორტეთ ქვემოთ:
-@import "./scss/media-queries/desktop-1240px";
-@import "./scss/media-queries/tablet-1024px";
+@import "./scss/media-queries/slider-section-media-queries/desktop-1240px";
+@import "./scss/media-queries/slider-section-media-queries/tablet-1024px";
