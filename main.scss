@@ -108,3 +108,7 @@ body {
     }
   }
 }
+
+
+// მედია-ქუერიები მოათავსეთ /scss/media-queries ფოლდერში და დააიმპორტეთ ქვემოთ:
+@import "./scss/media-queries/desktop-1240px";

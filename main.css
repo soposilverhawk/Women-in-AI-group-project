@@ -220,4 +220,21 @@ body {
 }
 .main #slider-section .img-description-container .slider-controls-container .slider-controls:hover {
   background-color: #E2E7F0;
+}
+
+@media screen and (max-width: 1240px) {
+  .container {
+    max-width: 1128px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .main {
+    margin-top: 48px;
+  }
+  .main #slider-section {
+    padding: 0;
+  }
+  .main #slider-section .img-description-container {
+    width: 90%;
+  }
 }/*# sourceMappingURL=main.css.map */
