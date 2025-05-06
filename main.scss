@@ -97,6 +97,7 @@ body {
         }
         .slider-controls {
           cursor: pointer;
+          border: none;
 
           &:hover {
             background-color: $interface-lightgray-1;

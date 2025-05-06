@@ -216,6 +216,7 @@ body {
 }
 .main section .img-description-container .slider-controls-container .slider-controls {
   cursor: pointer;
+  border: none;
 }
 .main section .img-description-container .slider-controls-container .slider-controls:hover {
   background-color: #E2E7F0;
