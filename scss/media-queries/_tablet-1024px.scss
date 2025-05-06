@@ -1,0 +1,40 @@
+@media screen and (max-width: 1024px) {
+  .container {
+    @include container($screenResolution: 1024px);
+  }
+  .main {
+    margin-top: 15px;
+
+    #slider-section {
+      height: 560px;
+      padding-left: 24px;
+      padding-top: 24px;
+
+      .img-description-container {
+        height: 20%;
+
+        .slider-controls-desktop {
+          display: none;
+        }
+      }
+
+      .slider-controls-tablet {
+        display: flex;
+        position: absolute;
+        gap: 12px;
+        background-color: $interface-lightgray-2;
+        padding: 8px;
+        border-radius: 8px;
+
+        .slider-controls {
+          cursor: pointer;
+          border: none;
+
+          &:hover {
+            background-color: $interface-lightgray-1;
+          }
+        }
+      }
+    }
+  }
+}

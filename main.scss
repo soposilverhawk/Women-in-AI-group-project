@@ -106,9 +106,14 @@ body {
         }
       }
     }
+
+    .slider-controls-tablet {
+      display: none;
+    }
   }
 }
 
 
 // მედია-ქუერიები მოათავსეთ /scss/media-queries ფოლდერში და დააიმპორტეთ ქვემოთ:
 @import "./scss/media-queries/desktop-1240px";
+@import "./scss/media-queries/tablet-1024px";
