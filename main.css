@@ -158,6 +158,7 @@ body {
 
 .main {
   margin-top: 48px;
+  background-color: #E2E7F0;
 }
 .main #slider-section {
   background: url("./imgs/slider-imgs/slider-1-mountains.png");
@@ -275,5 +276,53 @@ body {
   }
   .main #slider-section .slider-controls-tablet .slider-controls:hover {
     background-color: #E2E7F0;
+  }
+}
+@media screen and (max-width: 360px) {
+  .container {
+    max-width: 360px;
+    width: 100%;
+    max-width: 360px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .main {
+    margin-top: 0;
+  }
+  .main #slider-section {
+    height: 280px;
+    width: 100%;
+    background-position: center;
+    border-radius: 0;
+    padding-top: 0;
+    padding-left: 0;
+  }
+  .main #slider-section .img-description-container {
+    width: 100%;
+    left: 0;
+    bottom: -190px;
+    padding: 16px 0;
+    height: 158px;
+  }
+  .main #slider-section .img-description-container .description-category-date-container,
+  .main #slider-section .img-description-container .description-txt {
+    margin: 0 10px;
+  }
+  .main #slider-section .slider-controls-tablet {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    top: 50%;
+    padding: 0;
+    left: 5%;
+    background-color: transparent;
+  }
+  .main #slider-section .slider-controls-tablet .slider-controls {
+    border-radius: 8px;
+  }
+  .main #slider-section .slider-controls-tablet .slider-numeration {
+    display: none;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -34,6 +34,7 @@ body {
 }
 .main {
   margin-top: 48px;
+  background-color: $interface-lightgray-1;
 
   #slider-section {
     background: url("./imgs/slider-imgs/slider-1-mountains.png");
@@ -116,3 +117,4 @@ body {
 
 @import "./scss/media-queries/slider-section-media-queries/desktop-1240px";
 @import "./scss/media-queries/slider-section-media-queries/tablet-1024px";
+@import "./scss/media-queries/slider-section-media-queries/mobile-1240px";

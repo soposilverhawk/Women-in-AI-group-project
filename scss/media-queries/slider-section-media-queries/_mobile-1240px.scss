@@ -1,0 +1,51 @@
+@media screen and (max-width: 360px) {
+  .container {
+    max-width: 360px;
+    width: 100%;
+    @include container($screenResolution: 360px);
+  }
+
+  .main {
+    margin-top: 0;
+    // overflow: hidden;
+
+    #slider-section {
+      height: 280px;
+      width: 100%;
+      background-position: center;
+      border-radius: 0;
+      padding-top: 0;
+      padding-left: 0;
+
+      .img-description-container {
+        width: 100%;
+        left: 0;
+        bottom: -190px;
+        padding: 16px 0;
+        height: 158px;
+
+        .description-category-date-container,
+        .description-txt {
+            margin: 0 10px;
+        }
+      }
+
+      .slider-controls-tablet {
+        width: 90%;
+        @include flex($justify: space-between);
+        top: 50%;
+        padding: 0;
+        left: 5%;
+        background-color: transparent;
+
+        .slider-controls {
+            border-radius: 8px;
+        }
+
+        .slider-numeration {
+            display: none;
+        }
+    }
+    }
+  }
+}
