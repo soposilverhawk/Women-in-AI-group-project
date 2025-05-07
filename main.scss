@@ -26,6 +26,296 @@
 body {
 
   font-family: "Fira Sans", sans-serif;
+  background-color: $interface-lightgray-3;
+}
+//cards
+.container {
+  @include container;
+  flex-wrap: wrap;
+
+  .grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    gap: 16px;
+    .mini-card {
+      @include flex($direction: column, $justify: none, $align: none);
+      max-width: 304px;
+      border-radius: 12px;
+      box-shadow: $shadow-20;
+      .card-text {
+        padding: 16px 12px;
+        max-width: 280px;
+        p {
+          font-size: $txt-sm-fs;
+          line-height: $txt-sm-lh;
+          font-weight: $txt-sm-fw;
+          letter-spacing: $txt-sm-ls;
+          color: $interface-gray;
+          margin-bottom: 8px;
+        }
+        h4 {
+          font-size: $headline-3-fs;
+          line-height: $headline-3-lh;
+          font-weight: $headline-3-fw;
+          letter-spacing: $headline-3-ls;
+          color: $interface-black;
+          font-family: "FiraGO";
+        }
+      }
+    }
+    .big-card {
+      @include flex($direction: column, $justify: none, $align: none);
+      max-width: 640px;
+      border-radius: 12px;
+      box-shadow: $shadow-20;
+      .card-text {
+        padding: 32px 16px;
+        max-width: 608px;
+        border-bottom: 1px solid $interface-lightgray-2;
+        h4 {
+          font-size: $body-txt-fs;
+          line-height: $body-txt-lh;
+          font-weight: $body-txt-fw;
+          letter-spacing: $headline-3-ls;
+          color: $body-txt-ls;
+        }
+      }
+      .news {
+        @include flex($direction: row, $justify: space-between, $align: center);
+        padding: 16px;
+        p {
+          font-size: $headline-3-fs;
+          line-height: $headline-3-lh;
+          font-weight: $headline-3-fw;
+          letter-spacing: $body-txt-ls;
+          color: $primary-color;
+        }
+        h5 {
+          font-size: $txt-sm-fs;
+          line-height: $txt-sm-lh;
+          font-weight: $txt-sm-fw;
+          letter-spacing: $txt-sm-ls;
+          color: $interface-gray;
+        }
+      }
+    }
+    //grid
+    .moon {
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+    .clock {
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+    .cyan-splash {
+      grid-column: 2/3;
+      grid-row: 1/3;
+    }
+    .pink-splash {
+      grid-column: 3/4;
+      grid-row: 1/2;
+    }
+    .lockers {
+      grid-column: 3/4;
+      grid-row: 2/3;
+    }
+  }
+}
+//media 1240px
+@media screen and (max-width: 1240px) {
+  .container {
+    @include container($screenResolution: 1240px);
+    .grid {
+      display: grid;
+      width: 100%;
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      // gap: 16px;
+      .mini-card {
+        @include flex($direction: column, $justify: none, $align: none);
+        max-width: 264px;
+
+        .img-size-mini {
+          width: 264px;
+          height: 150px;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+          // transform: scale(0.89);
+          // transform-origin: center;
+        }
+
+        .card-text {
+          padding: 16px 12px;
+          max-width: 240px;
+        }
+      }
+      .big-card {
+        @include flex($direction: column, $justify: none, $align: none);
+        max-width: 552px;
+
+        .img-size-big {
+          width: 552px;
+          height: 356px;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .card-text {
+          padding: 32px 16px;
+          max-width: 520px;
+        }
+      }
+    }
+  }
+}
+
+//media 1024px
+@media screen and (max-width: 1024px) {
+  .container {
+    @include container($screenResolution: 1024px);
+    .grid {
+      display: grid;
+      width: 100%;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1.8fr 1fr 1fr;
+
+      .mini-card {
+        @include flex($direction: column, $justify: none, $align: none);
+        max-width: 448px;
+
+        .img-size-mini {
+          width: 448px;
+          height: 194px;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .card-text {
+          padding: 16px 12px;
+          max-width: 432px;
+        }
+      }
+      .big-card {
+        @include flex($direction: column, $justify: none, $align: none);
+        max-width: 928px;
+
+        .img-size-big {
+          width: 928px;
+          height: 372px;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .card-text {
+          padding: 32px 16px;
+          max-width: 896px;
+        }
+      }
+      .moon {
+        grid-column: 1/2;
+        grid-row: 2/3;
+      }
+      .clock {
+        grid-column: 1/2;
+        grid-row: 3/4;
+      }
+      .cyan-splash {
+        grid-column: 1/3;
+        grid-row: 1/2;
+      }
+      .pink-splash {
+        grid-column: 2/3;
+        grid-row: 2/3;
+      }
+      .lockers {
+        grid-column: 2/3;
+        grid-row: 3/4;
+      }
+    }
+  }
+}
+
+//media 360px
+@media screen and (max-width: 360px) {
+  .container {
+    @include container($screenResolution: 360px);
+    @include flex($direction: column, $justify: center, $align: center);
+    .grid {
+      display: grid;
+      width: 100%;
+      place-items: center;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr;
+
+      .mini-card {
+        @include flex($direction: column, $justify: none, $align: none);
+        max-width: 328px;
+        max-height: 230px;
+        .img-size-mini {
+          width: 328px;
+          height: 140px;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .card-text {
+          padding: 12px 4px 16px 12px;
+          max-width: 240px;
+        }
+      }
+      .big-card {
+        @include flex($direction: column, $justify: none, $align: none);
+        max-width: 328px;
+        .img-size-big {
+          width: 328px;
+          height: 191px;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .card-text {
+          padding: 16px;
+          max-width: 296px;
+        }
+      }
+      .moon {
+        grid-column: 1/2;
+        grid-row: 2/3;
+      }
+      .clock {
+        grid-column: 1/2;
+        grid-row: 3/4;
+      }
+      .cyan-splash {
+        grid-column: 1/2;
+        grid-row: 1/2;
+      }
+      .pink-splash {
+        grid-column: 1/2;
+        grid-row: 4/5;
+      }
+      .lockers {
+        grid-column: 1/2;
+        grid-row: 5/6;
+      }
+    }
+  }
 }
 
 * {
