@@ -1,0 +1,68 @@
+@media screen and (max-width: 1024px) {
+  .container {
+    @include container($screenResolution: 1024px);
+    .grid {
+      display: grid;
+      width: 100%;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1.8fr 1fr 1fr;
+
+      .mini-card {
+        @include flex($direction: column, $justify: none, $align: none);
+        max-width: 448px;
+
+        .img-size-mini {
+          width: 448px;
+          height: 194px;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .card-text {
+          padding: 16px 12px;
+          max-width: 432px;
+        }
+      }
+      .big-card {
+        @include flex($direction: column, $justify: none, $align: none);
+        max-width: 928px;
+
+        .img-size-big {
+          width: 928px;
+          height: 372px;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .card-text {
+          padding: 32px 16px;
+          max-width: 896px;
+        }
+      }
+      .moon {
+        grid-column: 1/2;
+        grid-row: 2/3;
+      }
+      .clock {
+        grid-column: 1/2;
+        grid-row: 3/4;
+      }
+      .cyan-splash {
+        grid-column: 1/3;
+        grid-row: 1/2;
+      }
+      .pink-splash {
+        grid-column: 2/3;
+        grid-row: 2/3;
+      }
+      .lockers {
+        grid-column: 2/3;
+        grid-row: 3/4;
+      }
+    }
+  }
+}

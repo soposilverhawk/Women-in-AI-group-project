@@ -1,0 +1,27 @@
+@media (max-width: 360px) {
+  .header-1 {
+    .social-icons {
+      display: none;
+    }
+
+    .logo {
+      font-size: 16px;
+      line-height: 34px;
+      display: flex;
+      justify-content: flex-start;
+      padding: 10px;
+    }
+
+    .second-search {
+      display: flex;
+    }
+
+    .search-bar {
+      display: none;
+    }
+
+    .header-2 {
+      display: none;
+    }
+  }
+}
