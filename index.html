@@ -19,27 +19,19 @@
   <body>
     <div class="main-container">
       <header> 
-        
         <div class="header-1 container">
-
         <div class="social-icons ">
          <button class="icon "><a href="#"><i class="fab fa-facebook-f"></i></a></button> 
          <button class="icon "><a href="#"><i class="fab fa-twitter"></i></a></button> 
          <button class="icon "><a href="#"><i class="fa-brands fa-square-instagram"></i></a></i></button> 
         </div>
-
         <div class="logo"><h1>Company Logo</h1></div>
-
         <div class="search-bar" >
           <input type="text" placeholder="ძიება...">
           <button class="search-btn"><i class="fas fa-search"></i></button>
         </div>
          <button class="second-search"><i class="fas fa-search"></i></button>
-
-        
       </div>
-      
-      
       <div class="header-2"> 
          <nav class="main-nav">
           <ul class="nav-list">
@@ -63,31 +55,48 @@
               </ul>
             </li>
           </ul>
-        
-        
         </nav>
       </div>
-    </div>
-  </div>
-</header>
-       
-    
-    <main class="container main">
-      <section id="slider-section">
-        <div class="img-description-container">
-          <div class="description-category-date-container">
-            <p>
-              <span class="category">პოლიტიკა</span> &bull;
-              <span class="date">18.04.2022</span>
-            </p>
+      </header>
+      <main class="container main">
+        <section id="slider-section">
+          <div class="img-description-container">
+            <div class="description-category-date-container">
+              <p>
+                <span class="category">პოლიტიკა</span> &bull;
+                <span class="date">18.04.2022</span>
+              </p>
+            </div>
+            <div class="description-txt">
+              <h2>
+                ქვემო ქართლის რეგიონში 20 მლნ ლარამდე ღირებულების სამელიორაციო
+                ინფრასტრუქტურული პროექტები დაიწყება
+              </h2>
+            </div>
+            <div class="slider-controls-container slider-controls-desktop flex">
+              <button class="slider-control-left slider-controls flex">
+                <img
+                  src="./imgs/general-icons/arrow-left.png"
+                  alt="previous slider arrow"
+                  class="slider-controls"
+                />
+              </button>
+              <p class="slider-numeration">
+                <span id="current-slider-num-display">1</span>/<span
+                  id="total-sliders-num-display"
+                  >4</span
+                >
+              </p>
+              <button class="slider-control-right slider-controls">
+                <img
+                  src="./imgs/general-icons/arrow-right.png"
+                  alt="next slider arrow"
+                  class="slider-controls flex"
+                />
+              </button>
+            </div>
           </div>
-          <div class="description-txt">
-            <h2>
-              ქვემო ქართლის რეგიონში 20 მლნ ლარამდე ღირებულების სამელიორაციო
-              ინფრასტრუქტურული პროექტები დაიწყება
-            </h2>
-          </div>
-          <div class="slider-controls-container slider-controls-desktop flex">
+          <div class="slider-controls-container slider-controls-tablet-and-mobile flex">
             <button class="slider-control-left slider-controls flex">
               <img
                 src="./imgs/general-icons/arrow-left.png"
@@ -109,97 +118,75 @@
               />
             </button>
           </div>
-        </div>
-        <div class="slider-controls-container slider-controls-tablet-and-mobile flex">
-          <button class="slider-control-left slider-controls flex">
-            <img
-              src="./imgs/general-icons/arrow-left.png"
-              alt="previous slider arrow"
-              class="slider-controls"
-            />
-          </button>
-          <p class="slider-numeration">
-            <span id="current-slider-num-display">1</span>/<span
-              id="total-sliders-num-display"
-              >4</span
-            >
-          </p>
-          <button class="slider-control-right slider-controls">
-            <img
-              src="./imgs/general-icons/arrow-right.png"
-              alt="next slider arrow"
-              class="slider-controls flex"
-            />
-          </button>
-        </div>
-      </section>
-      <section class="grid">
-        <div class="mini-card moon shadow">
-          <div class="img-size-mini">
-            <img src="./imgs/card-imgs/card-1-moons.png" alt="moons" />
+        </section>
+        <section class="grid">
+          <div class="mini-card moon shadow">
+            <div class="img-size-mini">
+              <img src="./imgs/card-imgs/card-1-moons.png" alt="moons" />
+            </div>
+            <div class="card-text">
+              <p>პოლიტიკა • 18.04.2023</p>
+              <h4>
+                კიმ ჩენ ინი აშშ-სა და სამხრეთ კორეას ბირთვული იარაღით ემუქრება
+              </h4>
+            </div>
           </div>
-          <div class="card-text">
-            <p>პოლიტიკა • 18.04.2023</p>
-            <h4>
-              კიმ ჩენ ინი აშშ-სა და სამხრეთ კორეას ბირთვული იარაღით ემუქრება
-            </h4>
+          <div class="mini-card clock shadow">
+            <div class="img-size-mini">
+              <img
+                src="./imgs/card-imgs/card-2-clock-with-flowers.png"
+                alt="clock"
+              />
+            </div>
+            <div class="card-text">
+              <p>პოლიტიკა • 18.04.2023</p>
+              <h4>საქართველოს მორაგბეთა ნაკრები „რაგბი ევროპის“ გამარჯვებულია</h4>
+            </div>
           </div>
-        </div>
-        <div class="mini-card clock shadow">
-          <div class="img-size-mini">
-            <img
-              src="./imgs/card-imgs/card-2-clock-with-flowers.png"
-              alt="clock"
-            />
+          <div class="big-card cyan-splash shadow">
+            <div class="img-size-big">
+              <img
+                src="./imgs/card-imgs/card-3-cyan-purple-splash.png"
+                alt="cyan-purple-splash"
+              />
+            </div>
+            <div class="card-text">
+              <h4>
+                ჩრდილოეთ კორეამ აშშ-სა და სამხრეთ კორეის წინააღმდეგ იმიტირებული
+                ბირთვული კონტრშეტევა დაიწყო
+              </h4>
+            </div>
+            <div class="news">
+              <p>ახალი ამბები</p>
+              <h5>18.04.2023</h5>
+            </div>
           </div>
-          <div class="card-text">
-            <p>პოლიტიკა • 18.04.2023</p>
-            <h4>საქართველოს მორაგბეთა ნაკრები „რაგბი ევროპის“ გამარჯვებულია</h4>
+          <div class="mini-card pink-splash shadow">
+            <div class="img-size-mini">
+              <img
+                src="./imgs/card-imgs/card-4-pink-blue-splash.png"
+                alt="pink-blue-splash"
+              />
+            </div>
+            <div class="card-text">
+              <p>პოლიტიკა • 18.04.2023</p>
+              <h4>დღეს კიბოს სკრინინგის მხარდასაჭერი კონცერტი გაიმართება</h4>
+            </div>
           </div>
-        </div>
-        <div class="big-card cyan-splash shadow">
-          <div class="img-size-big">
-            <img
-              src="./imgs/card-imgs/card-3-cyan-purple-splash.png"
-              alt="cyan-purple-splash"
-            />
+          <div class="mini-card lockers shadow">
+            <div class="img-size-mini">
+              <img
+                src="./imgs/card-imgs/card-5-colorful-lockers.png"
+                alt="colorful-lockers"
+              />
+            </div>
+            <div class="card-text">
+              <p>პოლიტიკა • 18.04.2023</p>
+              <h4>უკრაინას დიდი კონტრშეტევისთვის მხოლოდ ერთი მცდელობა ექნება</h4>
+            </div>
           </div>
-          <div class="card-text">
-            <h4>
-              ჩრდილოეთ კორეამ აშშ-სა და სამხრეთ კორეის წინააღმდეგ იმიტირებული
-              ბირთვული კონტრშეტევა დაიწყო
-            </h4>
-          </div>
-          <div class="news">
-            <p>ახალი ამბები</p>
-            <h5>18.04.2023</h5>
-          </div>
-        </div>
-        <div class="mini-card pink-splash shadow">
-          <div class="img-size-mini">
-            <img
-              src="./imgs/card-imgs/card-4-pink-blue-splash.png"
-              alt="pink-blue-splash"
-            />
-          </div>
-          <div class="card-text">
-            <p>პოლიტიკა • 18.04.2023</p>
-            <h4>დღეს კიბოს სკრინინგის მხარდასაჭერი კონცერტი გაიმართება</h4>
-          </div>
-        </div>
-        <div class="mini-card lockers shadow">
-          <div class="img-size-mini">
-            <img
-              src="./imgs/card-imgs/card-5-colorful-lockers.png"
-              alt="colorful-lockers"
-            />
-          </div>
-          <div class="card-text">
-            <p>პოლიტიკა • 18.04.2023</p>
-            <h4>უკრაინას დიდი კონტრშეტევისთვის მხოლოდ ერთი მცდელობა ექნება</h4>
-          </div>
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
