@@ -37,6 +37,7 @@ function renderSliderContent() {
 
   sliderSection.style.background = `url(${sliderData[sliderCount].img})`;
   sliderSection.style.backgroundRepeat = "no-repeat";
+  sliderSection.style.backgroundPosition = "center";
 }
 
 // helper function that renders slider description HTML

@@ -9,7 +9,6 @@
     #slider-section {
       height: 280px;
       width: 100%;
-      background-position: center;
       border-radius: 0;
       padding-top: 0;
       padding-left: 0;
@@ -24,30 +23,35 @@
 
         .description-category-date-container,
         .description-txt {
-            margin: 0 10px;
+          margin: 0 10px;
 
-            h2 {
-              @include headline($fs: $body-txt-fs, $lh: $body-txt-lh, $fw: $headline-fws, $ls: $headline-ls)
-            }
+          h2 {
+            @include headline(
+              $fs: $body-txt-fs,
+              $lh: $body-txt-lh,
+              $fw: $headline-fws,
+              $ls: $headline-ls
+            );
+          }
+        }
+
+        .slider-controls-tablet-and-mobile {
+          width: 90%;
+          @include flex($justify: space-between);
+          bottom: 180%;
+          padding: 0;
+          left: 5%;
+          background-color: transparent;
+
+          .slider-controls {
+            border-radius: 8px;
+          }
+
+          .slider-numeration {
+            display: none;
+          }
         }
       }
-
-      .slider-controls-tablet-and-mobile {
-        width: 90%;
-        @include flex($justify: space-between);
-        top: 50%;
-        padding: 0;
-        left: 5%;
-        background-color: transparent;
-
-        .slider-controls {
-            border-radius: 8px;
-        }
-
-        .slider-numeration {
-            display: none;
-        }
-    }
     }
   }
 }
