@@ -638,19 +638,20 @@ li a:hover {
   .main #slider-section .img-description-container .slider-controls-desktop {
     display: none;
   }
-  .main #slider-section .slider-controls-tablet-and-mobile {
+  .main #slider-section .img-description-container .slider-controls-tablet-and-mobile {
     display: flex;
     position: absolute;
     gap: 12px;
     background-color: #EDF0F7;
     padding: 8px;
     border-radius: 8px;
+    bottom: 280%;
   }
-  .main #slider-section .slider-controls-tablet-and-mobile .slider-controls {
+  .main #slider-section .img-description-container .slider-controls-tablet-and-mobile .slider-controls {
     cursor: pointer;
     border: none;
   }
-  .main #slider-section .slider-controls-tablet-and-mobile .slider-controls:hover {
+  .main #slider-section .img-description-container .slider-controls-tablet-and-mobile .slider-controls:hover {
     background-color: #E2E7F0;
   }
 }
