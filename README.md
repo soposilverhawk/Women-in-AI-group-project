@@ -55,6 +55,7 @@ Users should be able to:
 
 <!-- write here what you learnt during work on the project -->
 
+- **Sopo**: Learned how to work on a project in team: How to work with different git commands to separate work into branches, how to update branches according to the newest version of the code. I also learned how to manage a team of several devs, how to distribute tasks, how to merge different branches into main and resolve merge conflicts. Code vise, I revisitted event delegation concept. Overall, I got a hands-on experience with the realistic workflow of team projects.
 - **Anastasia**: Learned XYZ
 - **Nano**: Learned XYZ
 
@@ -62,6 +63,7 @@ Users should be able to:
 
 <!-- write what you plan to improve on in the future next to your name -->
 
+- **Sopo**: I plan to improve my understanding on conflict resolution during merges mainly.
 - **Anastasia**: XYZ
 - **Nano**: XYZ
 
@@ -74,7 +76,7 @@ Users should be able to:
 
 ## Author
 
-- Github - [Add your name here](https://www.your-site.com)
+- Github - [Sopo Bichinashvili](https://github.com/soposilverhawk)
 
 - Github - [Add your name here](https://www.your-site.com)
 
