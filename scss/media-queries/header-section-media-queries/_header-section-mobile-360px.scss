@@ -1,35 +1,37 @@
 @media (max-width: 360px) {
-  .header-1 {
-    padding: top 15px;;
-    .social-icons {
-      display: none;
-    }
 
-    .logo {
-      font-size: 16px;
-      line-height: 34px;
-      display: flex;
-      justify-content: flex-start;
-      padding: 10px;
-    }
-
-    .second-search {
-      display: block;
-    }
-   
-
-    .search-bar {
-      display: none;
-    }
-
-    .header-2 {
-      display: none;
-    }
+  .social-icons {
+    display: none;
   }
+
+  .logo {
+    font-size: 8px;
+    line-height: 34px;
+    padding: 0 10px;
+    
+
+  }
+  
+  .second-search {
+    display: block;
+  }
+
+  .buttons{
+    display: flex;
+  }
+
+  .search-bar {
+    display: none;
+  }
+
+  .header-2 {
+    display: none;
+  }
+
 
   .humburger {
     display: block;
-  
+
   }
 
   .humburger.active .bar:nth-child(2) {
@@ -46,7 +48,7 @@
 
   .nav-menu {
     display: flex;
-   
+
   }
 
   .nav-menu.active {

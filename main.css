@@ -296,6 +296,8 @@ body {
   align-items: center;
   background-color: #EDF0F7;
   border-radius: 10px;
+  position: absolute;
+  right: 70px;
 }
 
 input {
@@ -320,7 +322,9 @@ input {
 }
 
 .buttons {
-  display: flex;
+  display: none;
+  position: absolute;
+  right: 25px;
   align-items: center;
   justify-content: center;
   gap: 12px;
@@ -335,6 +339,9 @@ input {
   width: 40px;
   border-radius: 8px;
   background-color: #EDF0F7;
+}
+.second-search:hover {
+  cursor: pointer;
 }
 
 .humburger {
@@ -370,14 +377,13 @@ input {
   justify-content: space-between;
   align-items: center;
   gap: 34px;
-  box-shadow: 4px 4px 10px 3px black;
   position: absolute;
   right: -100%;
   top: 96px;
   flex-direction: column;
   background-color: #E2E7F0;
   border-radius: 5px;
-  width: 160px;
+  width: 100%;
   text-align: center;
   transition: 0.3s;
   z-index: 999;
@@ -554,22 +560,29 @@ li a:hover {
   .header-1 .logo {
     font-size: 34px;
   }
-  .header-1 .search-bar input {
-    width: 300px;
+  .header-1 .search-bar {
+    display: flex;
+    position: static;
   }
-  ul li a {
+  .header-1 .sidebar {
+    display: none;
+  }
+  .header-1 .search-bar input {
+    width: 250px;
+  }
+  .header-1 ul li a {
     font-size: 18px;
   }
 }
-@media (max-width: 1240px) {
+@media (max-width: 1240px) and (min-width: 1025px) {
   .header-1 {
-    flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 30px;
   }
   .header-1 .logo {
     font-size: 28px;
     text-align: center;
+    margin-right: 15rem;
   }
   .main-nav {
     display: flex;
@@ -636,6 +649,9 @@ li a:hover {
     padding: 0 2px;
     margin-left: 15px;
   }
+  .header-1 .buttons {
+    display: flex;
+  }
   .header-1 .social-icons {
     display: none;
   }
@@ -662,26 +678,24 @@ li a:hover {
   }
 }
 @media (max-width: 360px) {
-  .header-1 {
-    padding: top 15px;
-  }
-  .header-1 .social-icons {
+  .social-icons {
     display: none;
   }
-  .header-1 .logo {
-    font-size: 16px;
+  .logo {
+    font-size: 8px;
     line-height: 34px;
-    display: flex;
-    justify-content: flex-start;
-    padding: 10px;
+    padding: 0 10px;
   }
-  .header-1 .second-search {
+  .second-search {
     display: block;
   }
-  .header-1 .search-bar {
+  .buttons {
+    display: flex;
+  }
+  .search-bar {
     display: none;
   }
-  .header-1 .header-2 {
+  .header-2 {
     display: none;
   }
   .humburger {

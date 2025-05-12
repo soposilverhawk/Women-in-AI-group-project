@@ -192,6 +192,8 @@ body {
   align-items: center;
   background-color: $interface-lightgray-2;
   border-radius: 10px;
+  position: absolute;
+  right: 70px;
 
 }
 
@@ -220,10 +222,13 @@ input {
   }
 }
 .buttons{
-  display: flex;
+  display: none;
+  position: absolute;
+  right:25px;
   align-items: center;
   justify-content: center;
   gap:12px
+
 }
 .second-search {
   display: none;
@@ -234,9 +239,11 @@ input {
   width: 40px;
   border-radius: 8px;
   background-color: $interface-lightgray-2;
+  &:hover{
+    cursor: pointer;
+  }
 
 }
-
 
 .humburger {
   display: none;
@@ -273,14 +280,13 @@ input {
   justify-content: space-between;
   align-items: center;
   gap: 34px;
-  box-shadow: 4px 4px 10px 3px black;
   position: absolute;
   right: -100%;
   top: 96px;
   flex-direction: column;
   background-color: $interface-lightgray-1;
   border-radius: 5px;
-  width: 160px;
+  width: 100%;
   text-align: center;
   transition: 0.3s;
   z-index: 999;
@@ -295,9 +301,8 @@ input {
 .nav-menu a:hover {
 
   color: $primary-color;
-  text-decoration: none;
+  text-decoration: none
 }
-
 
 .header-2 {
   background-color: $interface-lightgray-1;
