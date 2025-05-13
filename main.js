@@ -84,3 +84,8 @@ function renderSliderDescriptionHTML(
     </div>
   `;
 }
+function toggleDropdown() {
+  const dropdown = document.getElementById("dropdown-content"); // ან შენი კლასი თუ სხვაა
+  dropdown.classList.toggle("show");
+  console.log("taso");
+}

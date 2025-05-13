@@ -220,6 +220,9 @@ input {
 .header-2 {
   background-color: $interface-lightgray-1;
   height: 52px;
+  .main-nav {
+    position: relative;
+  }
 }
 
 ul {
@@ -271,8 +274,8 @@ li {
   .dropdown-content {
     display: none;
     position: absolute;
-    top: 100%;
-    left: 0;
+    top: 0;
+    right: 20px;
     background-color: $interface-white;
     border-radius: 8px;
     list-style: none;
@@ -294,6 +297,13 @@ li {
         }
       }
     }
+  }
+  .show {
+    display: block;
+  }
+  .arrow.rotate {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
   }
 
   &:hover .dropdown-content {

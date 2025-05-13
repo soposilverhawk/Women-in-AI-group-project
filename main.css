@@ -339,6 +339,9 @@ input {
   background-color: #E2E7F0;
   height: 52px;
 }
+.header-2 .main-nav {
+  position: relative;
+}
 
 ul {
   display: flex;
@@ -384,8 +387,8 @@ li a:hover {
 .dropdown .dropdown-content {
   display: none;
   position: absolute;
-  top: 100%;
-  left: 0;
+  top: 0;
+  right: 20px;
   background-color: #fff;
   border-radius: 8px;
   list-style: none;
@@ -403,6 +406,13 @@ li a:hover {
 }
 .dropdown .dropdown-content li a:hover {
   background-color: #EDF0F7;
+}
+.dropdown .show {
+  display: block;
+}
+.dropdown .arrow.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
 }
 .dropdown:hover .dropdown-content {
   display: flex;
