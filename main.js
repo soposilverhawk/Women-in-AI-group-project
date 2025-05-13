@@ -109,6 +109,5 @@ function toggleDropdown() {
 const dropDown = document.querySelector(".dropdown")
 
 dropDown.addEventListener("click", () => {
-  console.log("test");
   toggleDropdown();
 })
