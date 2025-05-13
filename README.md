@@ -76,11 +76,13 @@ Users should be able to:
 - [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
 - [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
+<!-- add w3 schools for nano -->
+
 ## Author
 
 - Github - [Sopo Bichinashvili](https://github.com/soposilverhawk)
 
-- Github - [Add your name here](https://www.your-site.com)
+- Github - [Nanno Archemashvili](https://github.com/parazito-774)
 
 - Github - [Add your name here](https://www.your-site.com)
 
