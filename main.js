@@ -103,5 +103,12 @@ document.querySelectorAll(".nav-link").forEach((n) =>
 function toggleDropdown() {
   const dropdown = document.getElementById("dropdown-content"); // ან შენი კლასი თუ სხვაა
   dropdown.classList.toggle("show");
-  console.log("taso");
+  console.log(dropdown);
 }
+
+const dropDown = document.querySelector(".dropdown")
+
+dropDown.addEventListener("click", () => {
+  console.log("test");
+  toggleDropdown();
+})

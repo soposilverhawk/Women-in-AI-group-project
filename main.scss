@@ -193,7 +193,6 @@ body {
   border-radius: 10px;
   position: absolute;
   right: 70px;
-
 }
 
 input {
@@ -218,14 +217,13 @@ input {
     color: $interface-gray;
   }
 }
-.buttons{
+.buttons {
   display: none;
   position: absolute;
-  right:25px;
+  right: 25px;
   align-items: center;
   justify-content: center;
-  gap:12px
-
+  gap: 12px;
 }
 .second-search {
   display: none;
@@ -236,10 +234,9 @@ input {
   width: 40px;
   border-radius: 8px;
   background-color: $interface-lightgray-2;
-  &:hover{
+  &:hover {
     cursor: pointer;
   }
-
 }
 
 .humburger {
@@ -254,11 +251,9 @@ input {
   border: none;
   border-radius: 8px;
   width: 40px;
-  height:39px;
+  height: 39px;
   background-color: $interface-lightgray-2;
   cursor: pointer;
-
-
 }
 
 .bar {
@@ -268,7 +263,7 @@ input {
   width: 18px;
   height: 2px;
   margin: 3px auto;
- transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   background-color: black;
 }
 
@@ -296,9 +291,8 @@ input {
 }
 
 .nav-menu a:hover {
-
   color: $primary-color;
-  text-decoration: none
+  text-decoration: none;
 }
 
 .header-2 {
@@ -306,6 +300,37 @@ input {
   height: 52px;
   .main-nav {
     position: relative;
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 50px;
+      right: 20px;
+      background-color: $interface-white;
+      border-radius: 8px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      z-index: 10;
+      flex-direction: column;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+      li {
+        a {
+          display: block;
+          padding: 15px;
+          color: $interface-gray;
+          text-decoration: none;
+
+          &:hover {
+            background-color: $interface-lightgray-2;
+          }
+        }
+      }
+    }
+    .show {
+      display: block;
+    }
   }
 }
 
@@ -355,47 +380,15 @@ li {
     }
   }
 
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 20px;
-    background-color: $interface-white;
-    border-radius: 8px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    z-index: 10;
-    flex-direction: column;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-
-    li {
-      a {
-        display: block;
-        padding: 15px;
-        color: $interface-gray;
-        text-decoration: none;
-
-        &:hover {
-          background-color: $interface-lightgray-2;
-        }
-      }
-    }
-  }
-  .show {
-    display: block;
-  }
   .arrow.rotate {
     transform: rotate(180deg);
     transition: transform 0.3s ease;
   }
 
-  &:hover .dropdown-content {
-    display: flex;
-    background-color: $interface-white;
-  }
-
-
+  // &:hover .dropdown-content {
+  //   display: flex;
+  //   background-color: $interface-white;
+  // }
 }
 
 .container {
@@ -425,15 +418,19 @@ li {
       left: 24px;
       padding: 32px 24px;
       border-radius: 10px;
-      @include flex($direction: column,
+      @include flex(
+        $direction: column,
         $justify: space-between,
-        $align: flex-start);
+        $align: flex-start
+      );
 
       .description-category-date-container p {
-        @include headline($fs: $headline-3-fs,
+        @include headline(
+          $fs: $headline-3-fs,
           $lh: $headline-3-lh,
           $fw: $headline-fws,
-          $ls: -0.08px);
+          $ls: -0.08px
+        );
         @include flex();
         gap: 10px;
 
@@ -447,10 +444,12 @@ li {
       }
 
       h2 {
-        @include headline($fs: $headline-1-fs,
+        @include headline(
+          $fs: $headline-1-fs,
           $lh: $headline-2-lh,
           $fw: $headline-fws,
-          $ls: $headline-ls );
+          $ls: $headline-ls
+        );
       }
 
       .slider-controls-container {
