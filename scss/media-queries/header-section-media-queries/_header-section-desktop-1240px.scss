@@ -1,12 +1,12 @@
-@media (max-width: 1240px) {
+@media (max-width: 1240px) and (min-width: 1025px) {
   .header-1 {
-    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 30px;
+    padding: 0 30px; 
 
     .logo {
       font-size: 28px;
       text-align: center;
+      margin-right: 15rem;
     }
   }
 

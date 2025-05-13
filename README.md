@@ -57,7 +57,7 @@ Users should be able to:
 
 - **Sopo**: Learned how to work on a project in team: How to work with different git commands to separate work into branches, how to update branches according to the newest version of the code. I also learned how to manage a team of several devs, how to distribute tasks, how to merge different branches into main and resolve merge conflicts. Code vise, I revisitted event delegation concept. Overall, I got a hands-on experience with the realistic workflow of team projects.
 - **Anastasia**: Learned XYZ
-- **Nano**: Learned XYZ
+- **Nano**: I had my first team working experience while developing a web page as part of a group project. It was a great opportunity to learn and grow, especially since it was my first time working in a team. I learned how to use GitHub for collaboration, including  reviewing changes, and merging branches. Time management was crucial, and I realized how important it is to stay organized and communicate clearly with teammates. I also became more aware of the mistakes I was making and learned how to correct them through feedback and practice. Overall, the experience improved both my technical and teamwork skills.
 
 ### Continued development
 
@@ -65,7 +65,9 @@ Users should be able to:
 
 - **Sopo**: I plan to improve my understanding on conflict resolution during merges mainly.
 - **Anastasia**: XYZ
-- **Nano**: XYZ
+- **Nano**:  I want to deepen my understanding and use of media queries to create more responsive and user-friendly designs.
+
+
 
 <!-- Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect. -->
 
@@ -74,11 +76,13 @@ Users should be able to:
 - [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
 - [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
+<!-- add w3 schools for nano -->
+
 ## Author
 
 - Github - [Sopo Bichinashvili](https://github.com/soposilverhawk)
 
-- Github - [Add your name here](https://www.your-site.com)
+- Github - [Nanno Archemashvili](https://github.com/parazito-774)
 
 - Github - [Add your name here](https://www.your-site.com)
 
