@@ -491,8 +491,6 @@ li a:hover {
   margin-top: 48px;
 }
 .main #slider-section {
-  background: url("./imgs/slider-imgs/slider-1-mountains.png");
-  background-repeat: no-repeat;
   width: 100%;
   height: 712px;
   position: relative;
@@ -731,7 +729,7 @@ li a:hover {
     margin-top: 32px;
   }
   .main #slider-section .img-description-container {
-    width: 90%;
+    width: 95%;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -754,19 +752,20 @@ li a:hover {
   .main #slider-section .img-description-container .slider-controls-desktop {
     display: none;
   }
-  .main #slider-section .slider-controls-tablet-and-mobile {
+  .main #slider-section .img-description-container .slider-controls-tablet-and-mobile {
     display: flex;
     position: absolute;
     gap: 12px;
     background-color: #EDF0F7;
     padding: 8px;
     border-radius: 8px;
+    bottom: 280%;
   }
-  .main #slider-section .slider-controls-tablet-and-mobile .slider-controls {
+  .main #slider-section .img-description-container .slider-controls-tablet-and-mobile .slider-controls {
     cursor: pointer;
     border: none;
   }
-  .main #slider-section .slider-controls-tablet-and-mobile .slider-controls:hover {
+  .main #slider-section .img-description-container .slider-controls-tablet-and-mobile .slider-controls:hover {
     background-color: #E2E7F0;
   }
 }
@@ -782,7 +781,6 @@ li a:hover {
   .main #slider-section {
     height: 280px;
     width: 100%;
-    background-position: center;
     border-radius: 0;
     padding-top: 0;
     padding-left: 0;
@@ -806,21 +804,21 @@ li a:hover {
     font-weight: 600;
     letter-spacing: 0.35px;
   }
-  .main #slider-section .slider-controls-tablet-and-mobile {
+  .main #slider-section .img-description-container .slider-controls-tablet-and-mobile {
     width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    top: 50%;
+    bottom: 180%;
     padding: 0;
     left: 5%;
     background-color: transparent;
   }
-  .main #slider-section .slider-controls-tablet-and-mobile .slider-controls {
+  .main #slider-section .img-description-container .slider-controls-tablet-and-mobile .slider-controls {
     border-radius: 8px;
   }
-  .main #slider-section .slider-controls-tablet-and-mobile .slider-numeration {
+  .main #slider-section .img-description-container .slider-controls-tablet-and-mobile .slider-numeration {
     display: none;
   }
 }

@@ -16,15 +16,15 @@
         .slider-controls-desktop {
           display: none;
         }
-      }
 
-      .slider-controls-tablet-and-mobile {
+        .slider-controls-tablet-and-mobile {
         display: flex;
         position: absolute;
         gap: 12px;
         background-color: $interface-lightgray-2;
         padding: 8px;
         border-radius: 8px;
+        bottom: 280%;
 
         .slider-controls {
           cursor: pointer;
@@ -34,6 +34,7 @@
             background-color: $interface-lightgray-1;
           }
         }
+      }
       }
     }
   }
